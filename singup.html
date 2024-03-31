@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Protection Component</title>
+ 
+  <style>
+    .signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+  </head>
+<body>
+<div class="signup-container">
+  <h2>Sign Up</h2>
+  <form id="signup-form">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <span id="password-strength"></span>
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+    </div>
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#password").keyup(function() {
+      var password = $(this).val();
+      var strength = 0;
+      
+      // Check password strength
+      if (password.match(/[a-z]+/)) {
+        strength += 1;
+      }
+      if (password.match(/[A-Z]+/)) {
+        strength += 1;
+      }
+      if (password.match(/[0-9]+/)) {
+        strength += 1;
+      }
+      if (password.match(/[!@#$%^&*()]+/)) {
+        strength += 1;
+      }
+      
+      // Update password strength indication
+      $("#password-strength").text("Password Strength: " + strength + "/4");
+    });
+    
+    $("#signup-form").submit(function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Perform signup validation
+      var username = $("#username").val();
+      var email = $("#email").val();
+      var password = $("#password").val();
+      var confirmPassword = $("#confirm-password").val();
+      
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return;
+      }
+      
+      // Dummy validation - check if fields are not empty
+      if (username && email && password && confirmPassword) {
+        // Successful signup - You can perform additional actions here (e.g., AJAX request to server)
+        alert("Account created successfully!");
+        // Redirect the user to another platform after successful signup
+        window.location.href = "login.html"; // Change URL to your desired platform
+      } else {
+        // Show error message or handle accordingly
+        alert("Please fill in all fields.");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+</script>

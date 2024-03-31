@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phone Protection Component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" onclick="showmenu()">
+    <menu></menu>
+    <menu></menu>
+    <menu></menu>
+     </a>
+    <h1><u>superchash</u></h1>
+    <div class="card">
+        <h3>BALANCE</h3>
+        <p>ksh 20,000</p>        
+        <a href="#">withdraw</a>
+      </div>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showhome()">Home</a></li>
+        <li><a href="#" onclick="showBalance()">Balance</a></li>
+        <li><a href="#" onclick="showTeam()">Team</a></li>
+        <li><a href="#" onclick="showRecruit()">recruit</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+   <span id="menu1" style="display: none;">
+          <li><a href="#" onclick="showhome()">dashboard</a></li>
+          <li><a href="#" onclick="showBalance()">Balance</a></li>
+          <li><a href="#" onclick="showhelp()">help</a></li>
+          <li><a href="#" onclick="showTeam()">your team</a></li>
+          <li><a href="#" onclick="showsetting()">setting</a></li>
+          <li><a href="#" onclick="showRecruit()">Recruit</a></li>
+          <li><a href="#" onclick="showabout()">about</a></li>
+          
+   </span>
+    <div id="home" style="display: none;">
+
+    </div>
+    <div id="recruit" style="display: none;">
+        <h2>Recruit & Earn</h2>
+        <p>Invite others to join and earn rewards!</p>
+        <form id="recruitForm">
+          <label for="invite">Invite Code:</label>
+          <input type="text" id="invite" name="invite">
+          <button type="submit">Recruit</button>
+        </form>
+    </div>
+
+    <div id="balance" style="display: none;">
+      <h2>Balance</h2>
+      
+              
+    </div>
+    <div id="team" style="display: none;">
+      <h2>Team Members</h2>
+      <p>Your recruited team members will be listed here.</p>
+    </div>
+  </main>
+  <footer>
+    <footer>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="footer-social-icons">
+    <a href="#"><i class="fab fa-facebook-f">facebook</i></a>
+    <a href="#"><i class="fab fa-twitter">twitter</i></a>
+    <a href="#"><i class="fab fa-instagram">instagram</i></a>
+  </div>
+  <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
