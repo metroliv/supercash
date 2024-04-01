@@ -86,13 +86,12 @@ main {
   padding: 20px;
 }
  span{
- position: absolute; /* Position the element */
-  top: 0;
-  left: 0;
+top: 50px;
+  left: 50px;
   width: 200px;
   height: 200px;
-  
-  z-index: 1; 
+  background-color: blue;
+  z-index: 2;
  background-color: cyan;
 }
 
