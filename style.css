@@ -109,7 +109,8 @@ menu{
   background-color: white;
   margin: 2px 0px;
   width: 24px;
-  margin-left: 98%;
+  margin-left: 20px;
+  position: relative;
 }
 
 /* Form styles */
