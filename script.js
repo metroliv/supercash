@@ -31,3 +31,24 @@ function showRecruit() {
     document.getElementById("homeBtn").addEventListener("click", showHome);
     document.getElementById("balanceBtn").addEventListener("click", showBalance);
     document.getElementById("teamBtn").addEventListener("click", showTeam);
+
+   function copyLink() {
+  var linkInput = document.getElementById("recruitmentLink");
+  linkInput.value = window.location.href;
+  linkInput.select();
+  document.execCommand("copy");
+}
+
+function join() {
+  var recruiterName = document.getElementById("recruiterName").value;
+  if (recruiterName.trim() === "") {
+    alert("Please enter your name.");
+    return;
+  }
+
+  // You can send recruiterName to server here to store it.
+
+  var successMessage = document.getElementById("successMessage");
+  successMessage.textContent = "Joined successfully! Recruiter: " + recruiterName;
+}
+
