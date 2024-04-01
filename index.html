@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Phone Protection Component</title>
 <link rel="stylesheet" href="style.css">
- <link rel="icon" href="logo.PNG" type="image/PNG">
+ <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
   <header>
@@ -16,7 +16,9 @@
     <menu></menu>
      </a>-->
     <h1><u>EarnElites</u></h1>
-   
+    <menu>
+    <img src="logo.png" alt="Icon description">
+    </menu>
     <div class="card">
         <h3>BALANCE</h3>
         <p>ksh 20,000</p>        
@@ -25,7 +27,7 @@
     <nav>
       <ul>
         <li><a href="#" onclick="showhome()">Dashboard</a></li>
-        <li><a href="#" onclick="showBalance()">Balance</a></li>
+        
         <li><a href="#" onclick="showTeam()">Team</a></li>
         <li><a href="#" onclick="showRecruit()">recruit</a></li>
       </ul>
@@ -34,16 +36,17 @@
   <main>
    <span id="menu1" style="display: none;">
       <li><a href="#" onclick="showhelp()">help</a></li>         
-      <li><a href="#" onclick="showBalance()">your EarnElites history</a></li>          
+                
       <li><a href="#" onclick="showTeam()">your team</a></li>
       <li><a href="#" onclick="showsetting()">setting</a></li>
+
       <div class="logout">
         <li><a href="#" onclick="logout()">Logout</a></li>
       </div>  
       <a href="https://chat.whatsapp.com/LDU2pCxMx0rEGJso37et9t">WhatsApp group</a>       
     </span>
-    
-    <div id="home" style="display: none;">
+
+    <div id="home" style="display: block;">
 
         <div class="dashboard">
         <h1>Earning Platform Dashboard</h1>
@@ -105,36 +108,30 @@
         <h2>Recruit & Earn</h2>
         <p>Invite others to join and earn rewards!</p>
        
-      <div class="container">
-    <h1>Recruitment Platform</h1>
-    <p>Share this link with others to recruit:</p>
-    <input type="text" id="recruitmentLink" readonly>
-    <button onclick="copyLink()">Copy Link</button>
+          <div class="container">
+        <h1>Recruitment Platform</h1>
+        <p>Share this link with others to recruit:</p>
+        <input type="text" id="recruitmentLink" readonly>
+        <button onclick="copyLink()">Copy Link</button>
 
-    <h2>Join Us!</h2>
-    <input type="text" id="recruiterName" placeholder="Your Name">
-    <button onclick="join()">Join</button>
+        <h2>Join Us!</h2>
+        <input type="text" id="recruiterName" placeholder="Your Name">
+        <button onclick="join()">Join</button>
 
     <div id="successMessage"></div>
   </div>
-    </div>
+</div>
 
-    <div id="balance" style="display: none;">
-      <h2>Balance</h2>
-      
-              
-    </div>
+   
     <div id="team" style="display: none;">
       <h2>Team Members</h2>
       <p>Your recruited team members will be listed here.</p>
     </div>
+
   </main>
   <footer>
     <footer>
     <div class="footer-links">
-      <menu>
-    <img src="logo.PNG" alt="Icon description">
-    </menu>
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
       <li><a href="#" onclick="showabout()">About</a></li>
