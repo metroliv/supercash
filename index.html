@@ -53,6 +53,18 @@
           <input type="text" id="invite" name="invite">
           <button type="submit">Recruit</button>
         </form>
+      <div class="container">
+    <h1>Recruitment Platform</h1>
+    <p>Share this link with others to recruit:</p>
+    <input type="text" id="recruitmentLink" readonly>
+    <button onclick="copyLink()">Copy Link</button>
+
+    <h2>Join Us!</h2>
+    <input type="text" id="recruiterName" placeholder="Your Name">
+    <button onclick="join()">Join</button>
+
+    <div id="successMessage"></div>
+  </div>
     </div>
 
     <div id="balance" style="display: none;">
