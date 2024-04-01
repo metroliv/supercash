@@ -5,15 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Phone Protection Component</title>
 <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
   <header>
+   
    <!-- <a href="#" onclick="showmenu()">
     <menu></menu>
     <menu></menu>
     <menu></menu>
      </a>-->
     <h1><u>EarnElites</u></h1>
+    <menu>
+    <img src="logo.png" alt="Icon description">
+    </menu>
     <div class="card">
         <h3>BALANCE</h3>
         <p>ksh 20,000</p>        
@@ -21,7 +26,7 @@
       </div>
     <nav>
       <ul>
-        <li><a href="#" onclick="showhome()">Home</a></li>
+        <li><a href="#" onclick="showhome()">Dashboard</a></li>
         <li><a href="#" onclick="showBalance()">Balance</a></li>
         <li><a href="#" onclick="showTeam()">Team</a></li>
         <li><a href="#" onclick="showRecruit()">recruit</a></li>
@@ -30,21 +35,74 @@
   </header>
   <main>
    <span id="menu1" style="display: none;">
-          <li><a href="#" onclick="showhelp()">help</a></li>         
-          <li><a href="#" onclick="showBalance()">your EarnElites history</a></li>          
-          <li><a href="#" onclick="showTeam()">your team</a></li>
-          <li><a href="#" onclick="showsetting()">setting</a></li>
-     <div class="logout"
-         <li><a href="#" onclick="logout()">help</a></li>
-     </div>
-          
-          
-     <a href="https://chat.whatsapp.com/LDU2pCxMx0rEGJso37et9t">whatsapp group</a>
-          
-   </span>
+      <li><a href="#" onclick="showhelp()">help</a></li>         
+      <li><a href="#" onclick="showBalance()">your EarnElites history</a></li>          
+      <li><a href="#" onclick="showTeam()">your team</a></li>
+      <li><a href="#" onclick="showsetting()">setting</a></li>
+      <div class="logout">
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </div>  
+      <a href="https://chat.whatsapp.com/LDU2pCxMx0rEGJso37et9t">WhatsApp group</a>       
+    </span>
+    
     <div id="home" style="display: none;">
 
+        <div class="dashboard">
+        <h1>Earning Platform Dashboard</h1>
+        <div class="earnings-summary">
+            <h2>Earnings Summary</h2>
+            <p>Total Earnings: $XXXX</p>
+            <p>Earnings This Period: $XXXX</p>
+            <p>Pending Earnings: $XXXX</p>
+            <p>Bonuses: $XXXX</p>
+        </div>
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+                <!-- Display transaction history dynamically using JavaScript -->
+            </table>
+        </div>
+        <div class="performance-metrics">
+            <h2>Performance Metrics</h2>
+            <!-- Display performance metrics dynamically using JavaScript -->
+        </div>
+        <div class="progress-towards-goals">
+            <h2>Progress Towards Goals</h2>
+            <!-- Display progress towards goals dynamically using JavaScript -->
+        </div>
+        <div class="activity-feed">
+            <h2>Activity Feed</h2>
+            <!-- Display activity feed dynamically using JavaScript -->
+        </div>
+        <div class="earning-opportunities">
+            <h2>Earning Opportunities</h2>
+            <!-- Display earning opportunities dynamically using JavaScript -->
+        </div>
+        <div class="analytics-insights">
+            <h2>Analytics and Insights</h2>
+            <!-- Display analytics and insights dynamically using JavaScript -->
+        </div>
+        <div class="withdrawal-options">
+            <h2>Withdrawal Options</h2>
+            <!-- Display withdrawal options dynamically using JavaScript -->
+        </div>
+        <div class="settings-preferences">
+            <h2>Settings and Preferences</h2>
+            <!-- Display settings and preferences dynamically using JavaScript -->
+        </div>
+        <div class="support-help">
+            <h2>Support and Help</h2>
+            <!-- Display support and help links dynamically using JavaScript -->
+        </div>
     </div>
+    </div>
+
+
     <div id="recruit" style="display: none;">
         <h2>Recruit & Earn</h2>
         <p>Invite others to join and earn rewards!</p>
@@ -75,20 +133,19 @@
   </main>
   <footer>
     <footer>
-  <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <li><a href="#" onclick="showabout()">about</a></li>
-    <a href="#">Contact Us</a>
-  </div>
-  <div class="footer-social-icons">
-    <a href="#"><i class="fab fa-facebook-f">facebook</i></a>
-    <a href="#"><i class="fab fa-twitter">twitter</i></a>
-    <a href="#"><i class="fab fa-instagram">instagram</i></a>
-  </div>
-  <p>&copy; 2024 Your Company. All rights reserved.</p>
-</footer>
-
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <li><a href="#" onclick="showabout()">About</a></li>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-social-icons">
+      <a href="#"><i class="fab fa-facebook-f">facebook</i></a>
+      <a href="#"><i class="fab fa-twitter">twitter</i></a>
+      <a href="#"><i class="fab fa-instagram">instagram</i></a>
+    </div>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </footer>
   </footer>
   <script src="script.js"></script>
 </body>
