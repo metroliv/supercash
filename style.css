@@ -86,7 +86,13 @@ main {
   padding: 20px;
 }
  span{
- margin-left: 80%;
+ position: absolute; /* Position the element */
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  
+  z-index: 1; 
  background-color: cyan;
 }
 
@@ -109,8 +115,8 @@ menu{
   background-color: white;
   margin: 2px 0px;
   width: 24px;
-  margin-left: 20px;
-  position: relative;
+  margin-left: 10px;
+ 
 }
 
 /* Form styles */
