@@ -142,7 +142,12 @@ input[type="text"] {
   width: 100%;
   margin-bottom: 10px;
 }
-
+menu{
+  padding: 3px 0px;
+  width: 24px;
+  background-color: white;
+  margin: 3px 0px;
+}
 button {
   background-color: #007bff;
   color: #ffffff;
@@ -172,7 +177,7 @@ footer {
 img {
     width: 150px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
-    
+    border-radius: 50PX;
 }
 
 .footer-links {
