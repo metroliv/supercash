@@ -66,3 +66,16 @@ function fetchTransactionHistory() {
 }
 
 fetchTransactionHistory();
+function showContent(id) {
+            // Hide all content sections
+            const contentSections = document.querySelectorAll('.content-section');
+            contentSections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected content section
+            const selectedSection = document.getElementById(id);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
